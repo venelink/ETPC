@@ -1,0 +1,30 @@
+# Usage documentation on ETPC corpus version 0.8
+# This document describes the structure of the database table in the SQL version of ETPC
+# N.B.: This document is relevant to version 0.8 of the corpus. For other versions please refer to the corresponding documentation
+# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.8
+
+etpc_all.sql contains 4 tables: atomic_anno, paraphrase_types, raw_pairs, text_anno
+
+- paraphrase_types is purely informative table. It contains the Extended Paraphrase Typology (EPT) with the IDs associated to each type
+
+- raw_pairs contains the MRPC corpus (raw):
+  - pair_id is internal id of the pair, used in the other tables
+  - label is the original label given to the pair in MRPC (1 - paraphrase, 0 - non paraphrase)
+  - sent1_id and sent2_id are the original IDs of the sentences in MRPC (for backtracking)
+  - s1_content and s2_content are the raw text of the two sentences in MRPC
+  - s1_token and s2_token are the result of nltk.word_tokenize() applied to s1_content and s2_content
+  
+- text_anno contains the annotation for the first (textual) layer
+  - pair_id corresponds to the pair_id in raw_pairs
+  - label is the label associated to the pair by our annotators (1 - paraphrase, 0 - non paraphrase)
+  - negation is the presense or lack of negation (1 - negation, 0 - no negation)
+
+- atomic_anno contains the annotation for the second (atomic) layer and the third (negation) layer
+  - pair_id corresponds to the pair_id in raw_pairs
+  - type_id corresponds to the type_id in paraphrase_types
+  - s1_scope, s2_scope are numeric lists of token ids that belong to the scope of the phenomena
+  - key_s1, key_s2 are numeric lists of token ids that belong to the key of the phenomena (for more information, see the 
+  full EPT and the annotation guidelines)
+  - s1_text, s2_text, k1_text, k2_text are the text corresponding to the IDs in s1_scope, s2_scope, key_s1, and key_s2
+  (informative only)
+  - type_polarity indicates whether the atomic pair is sense preserving (1,9) or non-sense preserving (0)
