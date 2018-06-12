@@ -1,11 +1,14 @@
-# Usage documentation on ETPC corpus version 0.8
+# Usage documentation on ETPC corpus version 0.9
 # This document describes the structure of the database table in the SQL version of ETPC
-# N.B.: This document is relevant to version 0.8 of the corpus. For other versions please refer to the corresponding documentation
-# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.8
+# N.B.: This document is relevant to version 0.9 of the corpus. For other versions please refer to the corresponding documentation
+# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.9
+
+# N.B.: DB structure changelog from version 0.8 - none. 0.8 and 0.9 are fully compatible, the only change is on the content
 
 etpc_all.sql contains 4 tables: atomic_anno, paraphrase_types, raw_pairs, text_anno
 
 - paraphrase_types is purely informative table. It contains the Extended Paraphrase Typology (EPT) with the IDs associated to each type
+- N.B.: negation ID is 100, it is not in the paraphrase_types table
 
 - raw_pairs contains the MRPC corpus (raw):
   - pair_id is internal id of the pair, used in the other tables
@@ -17,6 +20,9 @@ etpc_all.sql contains 4 tables: atomic_anno, paraphrase_types, raw_pairs, text_a
 - text_anno contains the annotation for the first (textual) layer
   - pair_id corresponds to the pair_id in raw_pairs
   - label is the label associated to the pair by our annotators (1 - paraphrase, 0 - non paraphrase)
+      N.B.: For the pairs that were originally annotated as non-paraphrases, we manually re-evaluated them as paraphrases or non-paraphrases
+            For the pairs that were originally annotated as paraphrases, we relied on the annotation of Vila et al. 2015. We re-annotated as 
+            "non-paraphrases" any pair that contains a "non-paraphrase" element.
   - negation is the presense or lack of negation (1 - negation, 0 - no negation)
 
 - atomic_anno contains the annotation for the second (atomic) layer and the third (negation) layer
