@@ -1,0 +1,46 @@
+# Usage documentation on ETPC corpus version 0.9
+# This document describes the structure of the file structure in the XML version of ETPC
+# N.B.: This document is relevant to version 0.9 of the corpus. For other versions please refer to the corresponding documentation
+# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.9
+
+The XML version of the corpus contains 5 files
+
+- text_pairs.xml contains the MRPC corpus (raw):
+  - pair_id is internal id of the pair, used in the other files
+  - sent1_id and sent2_id are the original IDs of the sentences in MRPC (for backtracking)
+  - sent1_raw and sent2_raw are the raw text of the two sentences in MRPC
+  - sent1_tok and sent2_tok are the result of nltk.word_tokenize() applied to the raw text
+      N.B.: The type annotation was performed on the tokenized version of the corpus
+  - mrpc_label is the original textual label of the pair in MRPC (0 - non paraphrase, 1 - paraphrase)
+  - etpc_label is the re-annotated textual label in ETPC (0 - non paraphrase, 1 - paraphrase)
+      N.B.: There are some significant differences between mrpc_label and etpc_label! Users of the corpus should choose one (mrpc_label has 
+      backwards compatibility) and stick with it. Both are provided for convenience. Only ONE of them should be used!
+  - negation determines whether the pair contain negation or not (0 - no negation, 1 - negation)
+  
+The other 4 files (negation.xml, textual_paraphrases.xml, textual_np_pos.xml, textual_np_neg.xml) have the same structure:
+
+  - pair_id corresponds to the pair_id in text_pairs.xml
+  - type_id corresponds to the numeric ID of the atomic type
+  - type_name corresponds to the name of the atomic type
+  - sense_preserving indicates whether the atomic pair is sense preserving or non-sense preserving
+  - s1_scope, s2_scope are numeric lists of token ids that belong to the scope of the phenomena
+  - key_s1, key_s2 are numeric lists of token ids that belong to the key of the phenomena (for more information, see the 
+  full EPT and the annotation guidelines)
+  - s1_text, s2_text, k1_text, k2_text are the text corresponding to the IDs in s1_scope, s2_scope, key_s1, and key_s2
+
+  - The specifications and differences in the four files are as follows:
+    - negation.xml: contains the negation, the scope of negation (s1_scope, s2_scope) and the negation markers (key_s1, key_s2)
+    - textual_paraphrases.xml: contains the MRPC-A corpus by Vila et al. 2015. This is the annotation of all pairs originally annotated as
+        textual paraphrases in the MRPC corpus (pairs with mrpc_label=1). 
+        N.B.: In many cases, the "paraphrase" state of the pairs is questioned (etpc_label is different from mrpc_label). Keep that in mind 
+        if you use etpc_label! 
+        N.B.: In version 0.9 the numeric scope and key (s1_scope, s2_scope, key_s1, key_s2) are not available. Only the textual scope and key
+        are in the file. Version 1.0 should resolve this issue.
+        N.B.: The typology used in MRPC-A only has one type of Same Polarity Substitution, the contextual one. We are in the process of
+        re-annotating all SPS into three categories corresponding in ETPC - habitual, contextual, named entity. Only around half of the
+        instances of SPS are annotated as of version 0.9. Version 1.0 should resolve this issue. For most practical purposes this should
+        not affect the usability of the corpus
+    - textual_np_pos.xml and textual_np_neg.xml contain the annotation of pairs originally annotated as textual non-paraphrases in the
+        MRPC corpus (pairs with mrpc_label=0). _pos contains all atomic types that are sense preserving. _neg contains all atomic types
+        that are non-sense preserving.
+
