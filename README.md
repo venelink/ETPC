@@ -8,7 +8,7 @@ Organization
 
 If you use this corpus, please cite
 
-@InProceedings{KOVATCHEV18.661,
+```@InProceedings{KOVATCHEV18.661,
  author = {Venelin Kovatchev and Toni Marti and Maria Salamo},
  title = "{ETPC - A Paraphrase Identification Corpus Annotated with Extended Paraphrase Typology and Negation}",
  booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)},
@@ -20,6 +20,6 @@ If you use this corpus, please cite
  isbn = {979-10-95546-00-9},
  language = {english}
 }
-
+```
 
 For any questions or comments, you can contact me at vkovatchev [locative] ub [sentence separator] edu
