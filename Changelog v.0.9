@@ -1,0 +1,20 @@
+Following changes have been made from v0.8 to v0.9
+
+- Finished annotation of sense preserving phenomena in the textual non-paraphrases
+- Re-annotated more of the same-polarity substitution from the MRPC-A corpus (textual paraphrases)
+- Generated and uploaded XML version of the corpus
+- Removed some duplicated entries
+
+
+Known issues (to be fixed in version 1.0)
+
+- part of the same-polarity substitution from the MRPC-A corpus are not re-annotated (i.e. all of them were initially annotated as 
+  ``contextual'', we are currently determining which of them are ``habitual'' and which are ``named entity'')
+- the part of ETPC that is imported from MRPC-A is still not fully standardized (the MRPC-A corpus is annotated per-character, while 
+  ETPC is annotated per-token). The imported entries don't have numeric scopes and keys, just textual ones. Some textual scopes are
+  missing whitespaces due to inconsistency of the annotation by Vila et al. 2015
+
+
+Other:
+- ETPC_Neg corpus will be released shortly (before version 1.0)
+- Complementary information (stats, annotation guidelines, etc) are being added one by one
