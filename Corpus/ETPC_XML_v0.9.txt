@@ -17,6 +17,9 @@ The XML version of the corpus contains 5 files
       backwards compatibility) and stick with it. Both are provided for convenience. Only ONE of them should be used!
   - negation determines whether the pair contain negation or not (0 - no negation, 1 - negation)
   
+  - The first 4076 pairs (pair_id from 1 to 4076) correspond to the original "training" set in the MRPC. The remaining pairs (pair_id >
+      4076) correspond to the original "test" set in MRPC.
+  
 The other 4 files (negation.xml, textual_paraphrases.xml, textual_np_pos.xml, textual_np_neg.xml) have the same structure:
 
   - pair_id corresponds to the pair_id in text_pairs.xml
