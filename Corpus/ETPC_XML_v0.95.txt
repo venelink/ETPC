@@ -1,9 +1,9 @@
-# Usage documentation on ETPC corpus version 0.9
+# Usage documentation on ETPC corpus version 0.95
 # This document describes the structure of the file structure in the XML version of ETPC
-# N.B.: This document is relevant to version 0.9 of the corpus. For other versions please refer to the corresponding documentation
-# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.9
+# N.B.: This document is relevant to version 0.95 of the corpus. For other versions please refer to the corresponding documentation
+# N.B.: The corpus is still undergoing post-processing and version 1.0 should be available shortly including changelog from 0.95
 
-The XML version of the corpus contains 5 files
+The XML version of the corpus contains 6 files
 
 - text_pairs.xml contains the MRPC corpus (raw):
   - pair_id is internal id of the pair, used in the other files
@@ -19,7 +19,12 @@ The XML version of the corpus contains 5 files
   
   - The first 4076 pairs (pair_id from 1 to 4076) correspond to the original "training" set in the MRPC. The remaining pairs (pair_id >
       4076) correspond to the original "test" set in MRPC.
-  
+
+- paraphrase_types.xml contains the typology:
+  - type_id corresponds to the type ID in the annotation
+  - type_name is the human readable name of the type
+  - type_category is the meta-category of the type (morphology, lexicon, lexico-syntax, syntax, discourse, others, extremes)
+
 The other 4 files (negation.xml, textual_paraphrases.xml, textual_np_pos.xml, textual_np_neg.xml) have the same structure:
 
   - pair_id corresponds to the pair_id in text_pairs.xml
