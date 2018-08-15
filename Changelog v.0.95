@@ -1,3 +1,18 @@
+Following changes have been made from v0.9 to v0.95
+- Fixed UTF8 problems with text_pairs.xml
+- Fixed the numeric and textual scope problems at textual_paraphrases.xml
+- Added paraphrase_types.xml
+- temporarily removed the .sql version (conversion to the new format of WARP-Text)
+
+Known issues for 0.95
+- part of the same-polarity substitution from the MRPC-A corpus are not re-annotated (i.e. all of them were initially annotated as 
+  ``contextual'', we are currently determining which of them are ``habitual'' and which are ``named entity'').
+
+Other:
+- ETPC_Neg corpus will be released shortly (with version 1.0)
+- Complementary information (stats, annotation guidelines, etc) are being added one by one
+
+
 Following changes have been made from v0.8 to v0.9
 
 - Finished annotation of sense preserving phenomena in the textual non-paraphrases
@@ -5,8 +20,7 @@ Following changes have been made from v0.8 to v0.9
 - Generated and uploaded XML version of the corpus
 - Removed some duplicated entries
 
-
-Known issues (to be fixed in version 1.0)
+Known issues for 0.9 (to be fixed in future versions)
 
 - part of the same-polarity substitution from the MRPC-A corpus are not re-annotated (i.e. all of them were initially annotated as 
   ``contextual'', we are currently determining which of them are ``habitual'' and which are ``named entity'')
@@ -15,6 +29,3 @@ Known issues (to be fixed in version 1.0)
   missing whitespaces due to inconsistency of the annotation by Vila et al. 2015
 
 
-Other:
-- ETPC_Neg corpus will be released shortly (before version 1.0)
-- Complementary information (stats, annotation guidelines, etc) are being added one by one
