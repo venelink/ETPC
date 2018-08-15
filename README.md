@@ -1,6 +1,8 @@
 # ETPC
 The Extended Typology Paraphrase Corpus
 
+The corpus is currently at version 0.95. It has been updated two times since the initial update, fixing various problems (See changelog). Version 1.0 is expected shortly.
+
 Organization
 - Corpus/ : The full ETPC corpus.
 - ETPC-Neg/ : All pairs from ETPC that contain negation in at least one of the sentences. 
