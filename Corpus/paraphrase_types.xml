@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <paraphrase_type>
+    <type_id>1</type_id>
+    <type_name>Inflectional Changes</type_name>
+    <type_category>Morphology</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>2</type_id>
+    <type_name>Modal Verb Changes</type_name>
+    <type_category>Morphology</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>3</type_id>
+    <type_name>Derivational Changes</type_name>
+    <type_category>Morphology</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>4</type_id>
+    <type_name>Spelling changes</type_name>
+    <type_category>Lexicon</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>5</type_id>
+    <type_name>Same Polarity Substitution (habitual)</type_name>
+    <type_category>Lexicon</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>6</type_id>
+    <type_name>Same Polarity Substitution (contextual)</type_name>
+    <type_category>Lexicon</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>7</type_id>
+    <type_name>Same Polarity Substitution (named ent.)</type_name>
+    <type_category>Lexicon</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>8</type_id>
+    <type_name>Change of format</type_name>
+    <type_category>Lexicon</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>9</type_id>
+    <type_name>Opposite polarity substitution (habitual)</type_name>
+    <type_category>Lex-Synt</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>10</type_id>
+    <type_name>Opposite polarity substitution (contextual)</type_name>
+    <type_category>Lex-Synt</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>11</type_id>
+    <type_name>Synthetic/analytic substitution</type_name>
+    <type_category>Lex-Synt</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>13</type_id>
+    <type_name>Converse substitution</type_name>
+    <type_category>Lex-Synt</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>14</type_id>
+    <type_name>Diathesis alternation</type_name>
+    <type_category>Syntax</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>15</type_id>
+    <type_name>Negation switching</type_name>
+    <type_category>Syntax</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>16</type_id>
+    <type_name>Ellipsis</type_name>
+    <type_category>Syntax</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>17</type_id>
+    <type_name>Coordination changes</type_name>
+    <type_category>Syntax</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>18</type_id>
+    <type_name>Subordination and nesting changes</type_name>
+    <type_category>Syntax</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>21</type_id>
+    <type_name>Punctuation changes</type_name>
+    <type_category>Discourse</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>22</type_id>
+    <type_name>Direct/indirect style alternations</type_name>
+    <type_category>Discourse</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>23</type_id>
+    <type_name>Sentence modality changes</type_name>
+    <type_category>Discourse</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>24</type_id>
+    <type_name>Syntax/discourse structure changes</type_name>
+    <type_category>Discourse</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>25</type_id>
+    <type_name>Addition/Deletion</type_name>
+    <type_category>Other</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>26</type_id>
+    <type_name>Change of order</type_name>
+    <type_category>Other</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>28</type_id>
+    <type_name>Semantic based</type_name>
+    <type_category>Other</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>29</type_id>
+    <type_name>Identity</type_name>
+    <type_category>Extremes</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>30</type_id>
+    <type_name>Non-paraphrase</type_name>
+    <type_category>Extremes</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>31</type_id>
+    <type_name>Entailment</type_name>
+    <type_category>Extremes</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>32</type_id>
+    <type_name>Synthetic/analytic substitution (named ent.)</type_name>
+    <type_category>Lex-Synt</type_category>
+  </paraphrase_type>
+  <paraphrase_type>
+    <type_id>100</type_id>
+    <type_name>Negation</type_name>
+    <type_category>Neg</type_category>
+  </paraphrase_type>
+</xml>
