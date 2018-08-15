@@ -1,3 +1,8 @@
+### AT VERSION 0.95 the SQL is removed
+### IT WILL BE ADDED AGAIN IN VERSION 1.0
+### THE NEW SQL WILL BE COMPATIBLE WITH THE NEW VERSION OF WARP-TEXT
+
+
 # Usage documentation on ETPC corpus version 0.9
 # This document describes the structure of the database table in the SQL version of ETPC
 # N.B.: This document is relevant to version 0.9 of the corpus. For other versions please refer to the corresponding documentation
